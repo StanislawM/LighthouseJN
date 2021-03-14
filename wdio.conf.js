@@ -130,7 +130,7 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     // reporters: ['spec'],
     reporters: [
-        'dot',
+        'spec',
         ['junit', {
             outputDir: './'
         }]
