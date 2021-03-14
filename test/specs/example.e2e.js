@@ -1,16 +1,8 @@
-const LoginPage = require('../pageobjects/login.page');
-const SecurePage = require('../pageobjects/secure.page');
 
 describe('My Login application', () => {
     it('should login with valid credentials', () => {
-        LoginPage.open();
-
-        LoginPage.login('tomsmith', 'SuperSecretPassword!');
-        expect(SecurePage.flashAlert).toBeExisting();
-        expect(SecurePage.flashAlert).toHaveTextContaining(
-            'You logged into a secure area!');
+        browser.url("https://scores24.live/ru");
+        browser.pause(2000);
+        expect(browser).toHaveTitle('Результаты матчей и прогнозы на спорт каждый день - Scores24')
     });
 });
-
-
-// PATH=/sbin:/usr/sbin:/usr/bin:/usr/local/bin
