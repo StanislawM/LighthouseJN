@@ -13,3 +13,4 @@ describe('My Login application', () => {
 });
 
 
+// PATH=/sbin:/usr/sbin:/usr/bin:/usr/local/bin
