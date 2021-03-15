@@ -1,7 +1,7 @@
 describe('JSON.org page', () => {
-    before(() => {
-        browser.enablePerformanceAudits()
-    })
+    // before(() => {
+    //     browser.enablePerformanceAudits()
+    // })
 
     it('should load within performance budget', () => {
         /**
@@ -10,11 +10,11 @@ describe('JSON.org page', () => {
          */
         browser.url('http://json.org')
 
-        let metrics = browser.getMetrics()
-        console.log(metrics) // check that speedIndex is below 1.5ms
+        // let metrics = browser.getMetrics()
+        // console.log(metrics) // check that speedIndex is below 1.5ms
     })
 
-    after(() => {
-        browser.disablePerformanceAudits()
-    })
+    // after(() => {
+    //     browser.disablePerformanceAudits()
+    // })
 })
